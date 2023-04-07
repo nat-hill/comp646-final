@@ -8,6 +8,7 @@
 
 Instead of 'Zero Shot', it would make sense to check the average score when we give it example images from the training set.  
 [Inspiration Link](https://github.com/LightDXY/FT-CLIP/blob/main/models/finetune_clip.py)
+[Blog Post](https://huggingface.co/blog/fine-tune-clip-rsicd)
 
 ## (2) Image -> Image Caption (BLIP) -> Year (BERT)
 
