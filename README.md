@@ -1,6 +1,7 @@
 # Photo to Year Labeling w/ ML (COMP 646 Final Project)
 ### By Nat Hill & Ben Meisburger
 
+[Google Colab](https://colab.research.google.com/drive/1io5cnNjkbhrdZVrwqYhgqiMDl-ELLqeQ?authuser=1#scrollTo=I44_ll-n6LjP)
 
 ## (1) Zero Shot Labeling w/ CLIP (Image -> Year)
 
