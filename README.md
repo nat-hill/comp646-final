@@ -2,19 +2,18 @@
 ### By Nat Hill & Ben Meisburger
 
 
-## (1) Zero Shot Labeling w/ CLIP (Images to Year)
+## (1) Zero Shot Labeling w/ CLIP (Image -> Year)
 
-### Sub Test: Fine Tuning
-[Inspiration Link](https://github.com/LightDXY/FT-CLIP/blob/main/models/finetune_clip.py)
+### (1.1) Sub Test: Fine Tuning
 
 Instead of 'Zero Shot', it would make sense to check the average score when we give it example images from the training set.  
+[Inspiration Link](https://github.com/LightDXY/FT-CLIP/blob/main/models/finetune_clip.py)
+
+## (2) Image -> Image Caption (BLIP) -> Year (BERT)
 
 
-## (2) Image -> Image caption (BLIP) -> year (BERT)
 
-
-
-## (3) Image -> Date (w/ Fine Tuned ResNet (CNN))
+## (3) Image -> Date (w/ Fine Tuned CNN (ResNet))
 
 ### (3.1) Sub Test: RGB images vs Grayscale
 Reasoning: Any black and white image taken in modern times will likely be misidentified as being from the past, assuming the model learns the pattern that "black and white == old".
@@ -22,8 +21,8 @@ Reasoning: Any black and white image taken in modern times will likely be miside
 
 
 
-Accuracy metric:
+Accuracy metric choice:
 
 * MSE Makes sense here ( ex: $(1950 - 1955)^2$) means that a greater penalty is applied for a further guess. 
-However, we decided to derive the loss function from the original game,
-chronophoto.app
+
+* However, we decided to derive the loss function from the original game, chronophoto.app
